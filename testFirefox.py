@@ -7,6 +7,7 @@ import time
 #<class 'selenium.webdriver.firefox.webdriver.WebDriver'>
 
 def login(Id, browser):
+	#Try to connect to a tenhou server 
 	browser.get('http://tenhou.net/3/beta.html')
 	try: 
 		element = WebDriverWait(browser, 5).until(
@@ -34,7 +35,7 @@ def login(Id, browser):
 		#Join lobby 4 player open tanyaho aka dora
 		value = 0
 	except:
-		print("lol")
+		print("error")
 		value = 1
 	finally:
 		return value 
